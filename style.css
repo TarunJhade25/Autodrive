@@ -628,8 +628,6 @@ video-item iframe {
 
  .map-container {
     position: relative;
-    z-index:1;
-     
      
 }
 
@@ -637,7 +635,6 @@ video-item iframe {
     display: block;
     max-width: 100%;
     height: auto;
-    z-index:2;
 }
 
 .route {
@@ -657,7 +654,6 @@ video-item iframe {
 
 .traffic-alert {
     text-align: center;
-     z-index:2;
 }
 
 .traffic-image {
@@ -665,14 +661,12 @@ video-item iframe {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-     z-index:2;
 }
 
 #traffic-message {
     margin-top: 10px;
     font-size: 18px;
     color: #333;
-     z-index:2;
 } 
 
 
