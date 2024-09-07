@@ -627,7 +627,7 @@ video-item iframe {
 } 
 
  .map-container {
-    position: relative;
+    position: absolute;
 }
 
 .map {
