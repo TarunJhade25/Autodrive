@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveWave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="logo.jpeg" alt="DriveWave Logo" class="logo">
+            <h1 class="drivewave-text">DriveWave</h1>
+        </div>
+    </header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <button class="toggle-btn" id="tgl-btn" onclick="toggleSidebar()">☰</button>
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="DriveWave Logo" class="logo">
+        </div>
+        <h2>DriveWave</h2>
+        <ul>
+            <li><a href="home1.html">Home</a></li>
+            <li><a href="entertainment.html">Entertainment</a></li>
+            <li><a href="map">Map</a></li>
+            <li><a href="weather">Weather Update</a></li>
+            <li><a href="traffic">Traffic Alert</a></li>
+            <li><a href="fuel">Fuel Station Locator</a></li>
+            <li><a href="translate">Language Translate Assistance</a></li>
+            <li><a href="voice">Voice Activated Control</a></li>
+            <li><a href="dashboard">Customizable Dashboard</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Status for voice recognition -->
+    <div id="status">Voice recognition status will appear here.</div>
+    <main>
+        <section class="n1" id="novel">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for novels..." onfocus="openKeyboard()">
+                <button id="voice-search-btn" onclick="startVoiceSearch()">🎤</button>
+                <button onclick="searchYouTube()">Search</button>
+            </div>
+
+            <!-- Novel Video List -->
+            <div class="video-list" id="video-list">
+                <!-- Example Video -->
+                <div class="video-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bey4XXJAqS8" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <!-- Add more video items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>s
+        <p>@Kumari 2024 DriveWave. All Rights Reserved. </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="novel.js"></script>
+</body>
+
+</html>

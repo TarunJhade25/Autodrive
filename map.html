@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveWave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <button class="toggle-btn"  id="tgl-btn" onclick="toggleSidebar()">☰</button>
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="DriveWave Logo" class="logo">
+        </div>
+        <h2>DriveWave</h2>
+        <ul>
+            <li><a href="home1.html">Home</a></li>
+            <li><a href="entertainment">Entertainment</a></li>
+            <li><a href="map">Map</a></li>
+            <li><a href="weather">Weather Update</a></li>
+            <li><a href="traffic">Traffic Alert</a></li>
+            <li><a href="fuel">Fuel Station Locator</a></li>
+            <li><a href="translate">Language Translate Assistance</a></li>
+            <li><a href="voice">Voice Activated Control</a></li>
+            <li><a href="dashboard">Customizable Dashboard</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+    </div>
+    <!-- Status for voice recognition -->
+    <div id="status">Voice recognition status will appear here.</div>
+    <div class="content">
+        <div id="map">
+            
+            <div class="input-container">
+                <input type="text" id="source" placeholder="Enter Source">
+                <input type="text" id="destination" placeholder="Enter Destination">
+                <button onclick="findRoute()">Get Route</button>
+            </div>
+            <div id="map-display">
+                <img src="map.jpeg" alt="Map Image">
+            </div>
+            <div id="result">
+                <p id="route-info">Route information will appear here.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>@Kumari 2024 DriveWave. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="voice.js"></script>
+</body>
+</html>

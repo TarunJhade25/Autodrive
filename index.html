@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveWave - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.jpeg" alt="DriveWave Logo" class="logo">
+            <h1 class="drivewave-text">DriveWave</h1>
+        </div>
+    </header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <button class="toggle-btn" id="tgl-btn" onclick="toggleSidebar()">☰</button>
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="DriveWave Logo" class="logo">
+        </div>
+        <h2>DriveWave</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="entertainment.html">Entertainment</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="weather.html">Weather Update</a></li>
+            <li><a href="traffic.html">Traffic Alert</a></li>
+            <li><a href="fuel.html">Fuel Station Locator</a></li>
+            <li><a href="translate.html">Language Translate Assistance</a></li>
+            <li><a href="voice.html">Voice Activated Control</a></li>
+            <li><a href="dashboard.html">Customizable Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Status for voice recognition -->
+    <div id="status">Voice recognition status will appear here.</div>
+
+    <main id="main-content">
+        <section id="home-page" class="section">
+            <div class="robot-container">
+                <img src="robo.jpeg" alt="Robot Icon" class="robot-icon">
+                <div class="sound-wave"></div>
+                
+            </div>
+
+            <!-- Quick Access Cards -->
+            <div class="quick-access-cards">
+                <div class="card current-location">
+                    <h2>Current Location</h2>
+                    <p>Location: Karachi</p>
+                    <p>Weather: Sunny, 25°C</p>
+                </div>
+                <div class="card traffic-alerts">
+                    <h2>Traffic Alerts</h2>
+                    <p>No major issues nearby.</p>
+                </div>
+                <div class="card recommendations">
+                    <h2>Personalized Recommendations</h2>
+                    <p>Nearby: Gas Station, Restaurant</p>
+                </div>
+                <div class="card voice-command-tips">
+                    <h2>Voice Command Tips</h2>
+                    <p>Try saying: "What's my next task?"</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>@kumari 2024 DriveWave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="voice.js"></script>
+</body>
+
+</html>

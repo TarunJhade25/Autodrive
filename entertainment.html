@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveWave - Entertainment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.jpeg" alt="DriveWave Logo" class="logo">
+            <h1 class="drivewave-text">DriveWave</h1>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <button class="toggle-btn" id="tgl-btn" onclick="toggleSidebar()">☰</button>
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="DriveWave Logo" class="logo">
+        </div>
+        <h2>DriveWave</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="entertainment.html">Entertainment</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="weather.html">Weather Update</a></li>
+            <li><a href="traffic.html">Traffic Alert</a></li>
+            <li><a href="fuel.html">Fuel Station Locator</a></li>
+            <li><a href="translate.html">Language Translate Assistance</a></li>
+            <li><a href="voice.html">Voice Activated Control</a></li>
+            <li><a href="dashboard.html">Customizable Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Status for voice recognition -->
+    <div id="status">Voice recognition status will appear here.</div>
+
+    <!-- Entertainment section -->
+    <main id="dynamic-content">
+        <div class="robot-container">
+            <img src="robo.jpeg" alt="Robot Icon" class="robot-icon">
+            <div class="sound-wave"></div>
+        </div>
+        <div class="access-card">
+            <a href="news.html" class="option" id="news">
+                <div class="card">
+                    <img src="news.jpeg" alt="News Icon">
+                    <p>News</p>
+                </div>
+            </a>
+            <a href="novel.html" class="option" id="novel">
+                <div class="card">
+                    <img src="novel.jpeg" alt="Novel Icon">
+                    <p>Novel</p>
+                </div>
+            </a>
+            <a href="music.html" class="option" id="music">
+                <div class="card">
+                    <img src="music.jpeg" alt="Music Icon">
+                    <p>Music</p>
+                </div>
+            </a>
+            <a href="movie.html" class="option" id="movie">
+                <div class="card">
+                    <img src="movie.jpeg" alt="Movie Icon">
+                    <p>Movie</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>@Kumari 2024 DriveWave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="voice.js"></script>
+</body>
+
+</html>

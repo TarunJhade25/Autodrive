@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveWave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <header>
+        <div class="header-container">
+            <img src="logo.jpeg" alt="DriveWave Logo" class="logo">
+            <h1 class="drivewave-text">DriveWave</h1>
+        </div>
+    </header>
+    <div class="sidebar">
+        <button class="toggle-btn" id="tgl-btn" onclick="toggleSidebar()">☰</button>
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="DriveWave Logo" class="logo">
+        </div>
+        <h2>DriveWave</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="entertainment">Entertainment</a></li>
+            <li><a href="map">Map</a></li>
+            <li><a href="weather">Weather Update</a></li>
+            <li><a href="traffic">Traffic Alert</a></li>
+            <li><a href="fuel">Fuel Station Locator</a></li>
+            <li><a href="translate">Language Translate Assistance</a></li>
+            <li><a href="voice">Voice Activated Control</a></li>
+            <li><a href="dashboard">Customizable Dashboard</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Status for voice recognition -->
+    <div id="status">Voice recognition status will appear here.</div>
+    <main>
+        <section id="current-weather">
+            <div id="weather-header">
+                <input type="text" id="search-input" placeholder="Enter city...">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="weather-display">
+                <!-- Add the image here -->
+                <img src="weather.jpg" alt="Weather Image" id="weather-image">
+                <div id="weather-info">
+                    <h2 id="location">Loading...</h2>
+                    <p id="temperature">Temperature: <span id="temp">N/A</span></p>
+                    <p id="condition">Condition: <span id="condition">N/A</span></p>
+                    <p id="humidity">Humidity: <span id="humidity">N/A</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>@kumari 2024 DriveWave. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="voice.js"></script>
+</body>
+
+</html>
